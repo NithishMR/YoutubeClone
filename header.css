@@ -1,29 +1,41 @@
-.search-area {
-    height:50px;
+.header{
+    position:fixed;
+    background-color: white;
+    right:0;
+    left:0;
+    top:0;
+    z-index:100;
+}
+.search-areas {
+    height:80px;
     width:100%;
     display:flex;
-    align-items: center;
+    align-items:center;
     justify-content: space-between;
+    margin-bottom: 7px;
+    margin-top: -8px;
 }
 
 .left-section{
+    margin-left:15px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width:150px;
     height:40px;
+    flex-shrink: 0;
 }
 .hamburger-menu, .youtube-logo{
     display: inline-block;
 }
 .youtube-logo {
-    height:20px;
+    height:19px;
 }
 .hamburger-menu{
-    height:24px;
+    height:19px;
 }
 .middle-section{
-    width:500px;
+    width:580px;
     display:flex;
     align-items: center;
     min-width: 10px;
@@ -33,7 +45,7 @@
 }
 #search-area{
     flex:1;
-    height:34px;
+    height:35px;
     padding-left: 12px;
     border-radius: 15px 0 0 15px;
     border: 1px solid hsla(0,0%,53.3%,0.2);
@@ -42,12 +54,12 @@
     width:0;
 }
 #search-area::placeholder{
-    font-family:monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     
 }
 .search-button {
-    height: 37px;
+    height: 35px;
     width:60px;
     background-color: rgb(240,240,240);
     border: 1px solid hsla(0,0%,53.3%,0.2);
@@ -77,15 +89,37 @@
     width:150px;
     height:40px;
     flex-shrink: 0;
+    margin-right:10px;
 }
 .upload-icon{
-    height:28px;
+    height:22px;
 }
 .notifications-icon{
-    height:28px;
+    height:22px;
 }
 .chennel-icon{
-    height:34px;
-    border-radius: 17px;
+    height:32px;
+    border-radius: 16px;
 }
-
+.recommendation-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 70px;
+    margin-bottom:10px;
+    flex-wrap: nowrap;
+}
+.recommended-element{
+    background-color: rgba(0,0,0,0.05);
+    padding:6px 6px;
+    margin-top: -15px;
+    border-radius: 6px;
+    font-size:13px;
+    font-weight: 600;
+}
+@media screen and (max-width: 1200px) {
+    .recommendation-container, .recommended-element {
+        display: none;
+    }
+}

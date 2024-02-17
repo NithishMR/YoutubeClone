@@ -1,0 +1,37 @@
+.sidebar{
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    top:65px;
+    background-color: white;
+    width:70px;
+    z-index: 200;
+}
+.sidebar-container{
+    height:250px;
+    /*background-color: red;*/
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.side-elements{
+    height:50px;
+    width:80%;
+    /*background-color: yellow;*/
+    margin-bottom:3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.side-button{
+    background-color: white;
+    border:none;
+}
+.side-elements div{
+    font-size:10px;
+}
+
+
