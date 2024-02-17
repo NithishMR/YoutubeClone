@@ -53,6 +53,9 @@
     font-size: 15px;
     width:0;
 }
+input:focus{
+    outline:none;
+}
 #search-area::placeholder{
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
