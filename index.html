@@ -7,74 +7,100 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="sidebar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-
-    <title>Youtube Clone</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>YouTube Clone</title>
 </head>
 <body>
+  <!-- Header Section -->
   <header class="header">
     <div class="search-areas">
       <div class="left-section">
-        <img class="hamburger-menu" src="headerIcons/hamburger-menu.svg" alt="menu-Icon">
-        <img class="youtube-logo" src="headerIcons/youtube-logo.svg" alt="youtube-logo" >
+        <!-- Hamburger menu -->
+        <img class="hamburger-menu" src="headerIcons/hamburger-menu.svg" alt="Menu Icon" title="Menu">
+        <!-- YouTube logo -->
+        <img class="youtube-logo" src="headerIcons/youtube-logo.svg" alt="YouTube Logo" title="YouTube Home">
       </div>
+
       <div class="middle-section">
-        <input  type="text" placeholder="Search" id="search-area">
-        <button class="search-button">
-          <img  class="search-icon" src="headerIcons/search.svg" alt="search-icon" width="35">
+        <!-- Search bar -->
+        <input type="text" placeholder="Search" id="search-area" title="Search YouTube">
+        <!-- Search button -->
+        <button class="search-button" title="Search">
+          <img class="search-icon" src="headerIcons/search.svg" alt="Search Icon" width="35">
         </button>
-        <button class="voice-search-button">
-          <img class="voice-button" src="headerIcons/voice-search-icon.svg" alt="voice-search-icon">
+        <!-- Voice search button -->
+        <button class="voice-search-button" title="Voice Search">
+          <img class="voice-button" src="headerIcons/voice-search-icon.svg" alt="Voice Search Icon">
         </button>
       </div>
+
       <div class="right-section">
-        <img class="upload-icon" src="headerIcons/upload.svg" alt="upload">
-        <img class="notifications-icon" src="headerIcons/notifications.svg" alt="notifications">
-        <img class="channel-icon" src="headerIcons/chennel.jpg" alt="channel">
+        <!-- Video upload icon -->
+        <img class="upload-icon" src="headerIcons/upload.svg" alt="Upload Video" title="Upload Video">
+        <!-- Notifications icon -->
+        <img class="notifications-icon" src="headerIcons/notifications.svg" alt="Notifications" title="View Notifications">
+        <!-- Profile icon -->
+        <img class="channel-icon" src="headerIcons/chennel.jpg" alt="Your Channel" title="Your Channel">
       </div>
     </div>
+
+    <!-- Recommendation Bar -->
     <div class="recommendation-container">
-      <div class="recommended-element">All</div>
-      <div class="recommended-element">Mixes</div>
-      <div class="recommended-element">Music</div>
-      <div class="recommended-element">Computer Programming</div>
-      <div class="recommended-element">Hunter X Hunter</div>
-      <div class="recommended-element">Manga</div>
-      <div class="recommended-element">Gaming</div>
-      <div class="recommended-element">Films</div>
-      <div class="recommended-element">Podcasts</div>
-      <div class="recommended-element">Thoughts</div>
-      <div class="recommended-element">Functions</div>
-      <div class="recommended-element">Live</div>
-      <div class="recommended-element">History</div>
-      <div class="recommended-element">Physics</div>
-      <div class="recommended-element">Philosophy</div>
-      <div class="recommended-element">Live</div>
+      <div class="recommended-element" title="View all content">All</div>
+      <div class="recommended-element" title="Mixes">Mixes</div>
+      <div class="recommended-element" title="Music">Music</div>
+      <div class="recommended-element" title="Computer Programming">Computer Programming</div>
+      <div class="recommended-element" title="Hunter X Hunter">Hunter X Hunter</div>
+      <div class="recommended-element" title="Manga">Manga</div>
+      <div class="recommended-element" title="Gaming">Gaming</div>
+      <div class="recommended-element" title="Films">Films</div>
+      <div class="recommended-element" title="Podcasts">Podcasts</div>
+      <div class="recommended-element" title="Thoughts">Thoughts</div>
+      <div class="recommended-element" title="Functions">Functions</div>
+      <div class="recommended-element" title="Live">Live</div>
+      <div class="recommended-element" title="History">History</div>
+      <div class="recommended-element" title="Physics">Physics</div>
+      <div class="recommended-element" title="Philosophy">Philosophy</div>
     </div>
-</header>
-  <nav >
+  </header>
+
+  <!-- Sidebar Navigation -->
+  <nav>
     <div class="sidebar">
       <div class="sidebar-container">
-        <div class="side-elements">
-          <button class="side-button" type="button"><img src="headerIcons/home.svg" alt="home" height="22"></button>
+        <div class="side-elements" title="Home">
+          <button class="side-button" type="button">
+            <img src="headerIcons/home.svg" alt="Home" height="22">
+          </button>
           <div>Home</div>
         </div>
-        <div class="side-elements">
-          <button class="side-button" type="button"><img src="headerIcons/youtube-apps.svg" alt="home" height="22"></button>
+
+        <div class="side-elements" title="Apps">
+          <button class="side-button" type="button">
+            <img src="headerIcons/youtube-apps.svg" alt="Apps" height="22">
+          </button>
           <div>Apps</div>
         </div>
-        <div class="side-elements">
-          <button class="side-button" type="button"><img src="headerIcons/subscriptions.svg" alt="home" height="22"></button>
-          <div>subscriptions</div>
+
+        <div class="side-elements" title="Subscriptions">
+          <button class="side-button" type="button">
+            <img src="headerIcons/subscriptions.svg" alt="Subscriptions" height="22">
+          </button>
+          <div>Subscriptions</div>
         </div>
-        <div class="side-elements">
-          <button class="side-button" type="button"><img src="headerIcons/library.svg" alt="home" height="22"></button>
-          <div>You</div>
+
+        <div class="side-elements" title="Library">
+          <button class="side-button" type="button">
+            <img src="headerIcons/library.svg" alt="Library" height="22">
+          </button>
+          <div>Library</div>
         </div>
-    </div>
+      </div>
     </div>
   </nav>
+
+  <!-- Main Video Content -->
   <div class="container">
     <div class="video-section">
       <div class="thumbnail">
@@ -268,5 +294,6 @@
       </div>
     </div>
   </div>
+
 </body>
 </html>
