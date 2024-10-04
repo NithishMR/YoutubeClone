@@ -19,49 +19,74 @@
     <header class="header">
       <div class="search-areas">
         <div class="left-section">
-          <img
-            class="hamburger-menu"
-            src="headerIcons/hamburger-menu.svg"
-            alt="menu-Icon"
-          />
-          <img
-            class="youtube-logo"
-            src="headerIcons/youtube-logo.svg"
-            alt="youtube-logo"
-          />
+          <div class="tooltip-container">
+            <img
+              class="hamburger-menu"
+              src="headerIcons/hamburger-menu.svg"
+              alt="menu-Icon"
+            />
+            <span class="tooltip-text">Menu</span>
+          </div>
+          <div class="tooltip-container">
+            <img
+              class="youtube-logo"
+              src="headerIcons/youtube-logo.svg"
+              alt="youtube-logo"
+            />
+          </div>
         </div>
+
         <div class="middle-section">
           <input type="text" placeholder="Search" id="search-area" />
-          <button class="search-button">
+          <button class="search-button" title="Search">
             <img
               class="search-icon"
               src="headerIcons/search.svg"
               alt="search-icon"
               width="35"
             />
+            <span class="tooltip-text">Search</span>
           </button>
-          <button class="voice-search-button">
-            <img
-              class="voice-button"
-              src="headerIcons/voice-search-icon.svg"
-              alt="voice-search-icon"
-            />
-          </button>
+
+          <div class="tooltip-container">
+            <button class="voice-search-button">
+              <img
+                class="voice-button"
+                src="headerIcons/voice-search-icon.svg"
+                alt="voice-search-icon"
+              />
+              <span class="tooltip-text">Voice Search</span>
+            </button>
+          </div>
         </div>
+
         <div class="right-section">
-          <img class="upload-icon" src="headerIcons/upload.svg" alt="upload" />
-          <img
-            class="notifications-icon"
-            src="headerIcons/notifications.svg"
-            alt="notifications"
-          />
-          <img
-            class="chennel-icon"
-            src="headerIcons/chennel.jpg"
-            alt="chennel"
-          />
+          <div class="tooltip-container">
+            <img
+              class="upload-icon"
+              src="headerIcons/upload.svg"
+              alt="upload"
+            />
+            <span class="tooltip-text">Upload</span>
+          </div>
+          <div class="tooltip-container">
+            <img
+              class="notifications-icon"
+              src="headerIcons/notifications.svg"
+              alt="notifications"
+            />
+            <span class="tooltip-text">Notifications</span>
+          </div>
+          <div class="tooltip-container">
+            <img
+              class="chennel-icon"
+              src="headerIcons/chennel.jpg"
+              alt="channel"
+            />
+          </div>
         </div>
       </div>
+
       <div class="recommendation-container">
         <div class="recommended-element">All</div>
         <div class="recommended-element">Mixes</div>
@@ -87,30 +112,39 @@
           <div class="side-elements">
             <button class="side-button" type="button">
               <img src="headerIcons/home.svg" alt="home" height="22" />
+              <span class="tooltip-text">Home</span>
             </button>
             <div>Home</div>
           </div>
           <div class="side-elements">
             <button class="side-button" type="button">
-              <img src="headerIcons/youtube-apps.svg" alt="home" height="22" />
+              <img src="headerIcons/youtube-apps.svg" alt="apps" height="22" />
+              <span class="tooltip-text">Apps</span>
             </button>
             <div>Apps</div>
           </div>
           <div class="side-elements">
             <button class="side-button" type="button">
-              <img src="headerIcons/subscriptions.svg" alt="home" height="22" />
+              <img
+                src="headerIcons/subscriptions.svg"
+                alt="subscriptions"
+                height="22"
+              />
+              <span class="tooltip-text">Subscriptions</span>
             </button>
-            <div>subscriptions</div>
+            <div>Subscriptions</div>
           </div>
           <div class="side-elements">
             <button class="side-button" type="button">
-              <img src="headerIcons/library.svg" alt="home" height="22" />
+              <img src="headerIcons/library.svg" alt="library" height="22" />
+              <span class="tooltip-text">Library</span>
             </button>
             <div>You</div>
           </div>
         </div>
       </div>
     </nav>
+
     <div class="container">
       <div class="video-section">
         <div class="thumbnail">

@@ -32,3 +32,36 @@
 .side-elements div {
   font-size: 10px;
 }
+/* Tooltip container */
+.side-button {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip-text {
+  visibility: hidden;
+  width: 80px; /* Smaller width */
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 4px; /* Smaller padding */
+  border-radius: 4px;
+  font-size: 12px; /* Smaller font size */
+
+  /* Position the tooltip to the right */
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 105%; /* Adjust distance from the button */
+  transform: translateY(-50%);
+
+  /* Tooltip arrow (optional) */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.side-button:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
