@@ -5,58 +5,59 @@
   top: 65px;
   background-color: white;
   width: 70px;
+  max-width: 70px;
   z-index: 200;
+  transition: width 0.3s ease;
 }
+
 .sidebar-container {
-  height: 250px;
-  /*background-color: red;*/
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+
   align-items: center;
 }
+
 .side-elements {
   height: 50px;
   width: 80%;
-  /*background-color: yellow;*/
   margin-bottom: 3px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  padding-top: 24px;
+  padding-bottom: 4px;
 }
+
 .side-button {
   background-color: white;
   border: none;
 }
+
 .side-elements div {
   font-size: 10px;
 }
-/* Tooltip container */
+
 .side-button {
   position: relative;
   display: inline-block;
 }
 
-/* Tooltip text */
 .tooltip-text {
   visibility: hidden;
-  width: 80px; /* Smaller width */
+  width: 80px;
   background-color: black;
   color: #fff;
   text-align: center;
-  padding: 4px; /* Smaller padding */
+  padding: 4px;
   border-radius: 4px;
-  font-size: 12px; /* Smaller font size */
-
-  /* Position the tooltip to the right */
+  font-size: 12px;
   position: absolute;
   z-index: 1;
   top: 50%;
-  left: 105%; /* Adjust distance from the button */
+  left: 105%;
   transform: translateY(-50%);
-
-  /* Tooltip arrow (optional) */
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -64,4 +65,34 @@
 .side-button:hover .tooltip-text {
   visibility: visible;
   opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: 50px;
+  }
+
+  .side-elements div {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    width: 40px;
+  }
+
+  .side-elements div {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 35px;
+  }
+
+  .side-elements div {
+    font-size: 7px;
+  }
 }

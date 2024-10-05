@@ -21,6 +21,7 @@ body {
   column-gap: 8px;
   row-gap: 13px;
   padding-bottom: 15px;
+  margin-left: 30px;
 }
 
 .firstThumbnail {
@@ -113,14 +114,86 @@ body {
   align-items: center;
 }
 
-/* Responsive Styles */
+/* Header Styles */
+.header {
+  position: fixed;
+  background-color: white;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.search-areas {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 7px;
+  margin-top: -8px;
+}
+
+.left-section,
+.right-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.left-section {
+  margin-left: 15px;
+  width: 150px;
+  height: 40px;
+}
+
+.right-section {
+  margin-right: 10px;
+  width: 150px;
+  height: 40px;
+}
+
+.middle-section {
+  width: 580px;
+  display: flex;
+  align-items: center;
+  min-width: 10px;
+}
+
+#search-area {
+  flex: 1;
+  height: 35px;
+  padding-left: 12px;
+  border-radius: 15px 0 0 15px;
+  border: 1px solid hsla(0, 0%, 53.3%, 0.2);
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.05);
+  font-size: 15px;
+}
+
+.search-button {
+  height: 35px;
+  width: 60px;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid hsla(0, 0%, 53.3%, 0.2);
+  border-radius: 0 12px 12px 0;
+  margin-left: -1px;
+  margin-right: 10px;
+}
+
 @media (max-width: 1200px) {
   body {
     padding-left: 40px;
   }
-
-  .container {
-    grid-template-columns: repeat(3, 1fr);
+  .header {
+    padding: 10px;
+  }
+  .left-section,
+  .right-section {
+    width: 120px;
+  }
+  .middle-section {
+    width: 400px;
   }
 }
 
@@ -128,13 +201,15 @@ body {
   body {
     padding-left: 20px;
   }
-
-  .container {
-    grid-template-columns: repeat(2, 1fr);
+  .header {
+    padding: 8px;
   }
-
-  .main-description {
-    font-size: 13px;
+  .left-section,
+  .right-section {
+    width: 100px;
+  }
+  .middle-section {
+    width: 300px;
   }
 }
 
@@ -142,13 +217,15 @@ body {
   body {
     padding-left: 10px;
   }
-
-  .container {
-    grid-template-columns: 1fr;
+  .header {
+    padding: 5px;
   }
-
-  .main-description {
-    font-size: 11px;
+  .left-section,
+  .right-section {
+    width: 80px;
+  }
+  .middle-section {
+    width: 200px;
   }
 }
 

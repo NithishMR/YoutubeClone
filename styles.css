@@ -6,6 +6,7 @@
   top: 0;
   z-index: 100;
 }
+
 .search-areas {
   height: 80px;
   width: 100%;
@@ -25,26 +26,32 @@
   height: 40px;
   flex-shrink: 0;
 }
+
 .hamburger-menu,
 .youtube-logo {
   display: inline-block;
 }
+
 .youtube-logo {
   height: 19px;
 }
+
 .hamburger-menu {
   height: 19px;
 }
+
 .middle-section {
   width: 580px;
   display: flex;
   align-items: center;
   min-width: 10px;
 }
+
 #search-area,
 .search-icon {
   display: inline-block;
 }
+
 #search-area {
   flex: 1;
   height: 35px;
@@ -55,13 +62,16 @@
   font-size: 15px;
   width: 0;
 }
+
 input:focus {
   outline: none;
 }
+
 #search-area::placeholder {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
 }
+
 .search-button {
   height: 35px;
   width: 60px;
@@ -71,10 +81,12 @@ input:focus {
   margin-left: -1px;
   margin-right: 10px;
 }
+
 .search-icon {
   margin-top: 4px;
   height: 25px;
 }
+
 .voice-search-button {
   height: 40px;
   width: 40px;
@@ -82,10 +94,12 @@ input:focus {
   border: none;
   background-color: hsla(0, 0%, 53.3%, 0.2);
 }
+
 .voice-button {
   height: 24px;
   margin-top: 4px;
 }
+
 .right-section {
   display: flex;
   justify-content: space-around;
@@ -95,16 +109,20 @@ input:focus {
   flex-shrink: 0;
   margin-right: 10px;
 }
+
 .upload-icon {
   height: 22px;
 }
+
 .notifications-icon {
   height: 22px;
 }
+
 .chennel-icon {
   height: 32px;
   border-radius: 16px;
 }
+
 .recommendation-container {
   display: flex;
   flex-direction: row;
@@ -114,6 +132,7 @@ input:focus {
   margin-bottom: 10px;
   flex-wrap: nowrap;
 }
+
 .recommended-element {
   background-color: rgba(0, 0, 0, 0.05);
   padding: 6px 6px;
@@ -122,9 +141,41 @@ input:focus {
   font-size: 13px;
   font-weight: 600;
 }
+
 @media screen and (max-width: 1200px) {
   .recommendation-container,
   .recommended-element {
     display: none;
+  }
+}
+
+/* New media query to hide the recommendation container on large screens */
+@media screen and (min-width: 1500px) {
+  .recommendation-container,
+  .recommended-element {
+    display: none;
+  }
+}
+
+/* Responsive font sizes for <strong> elements */
+strong {
+  font-size: 1.2em; /* Default size */
+}
+
+@media screen and (max-width: 900px) {
+  strong {
+    font-size: 1.1em; /* Slightly smaller on smaller screens */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  strong {
+    font-size: 1em; /* Base size for smaller devices */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  strong {
+    font-size: 0.9em; /* Even smaller for very small devices */
   }
 }
